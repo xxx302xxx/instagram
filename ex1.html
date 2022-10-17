@@ -1,0 +1,32 @@
+<div>
+<script>
+    function numbering(n){
+        for(let i=0; i<n; i++){
+            console.log(i)
+        }
+    }
+</script>
+<input type="button" value="버튼" onClick="numbering(5)"/>
+</div>
+
+<div>
+<script>
+    function red(){
+        let button = document.querySelector("#b")
+        button.style.backgroundColor="red"
+    }
+</script>
+<input id="b" type="button" value="버튼" onClick="red()"/>
+</div>
+
+<div>
+<input id="c" type="button" value="버튼"/>
+<script>
+    let button = document.querySelector("#c")
+    button.addEventListener("click",
+        function(e){
+            alert("clicked!")
+        }
+    )
+</script>   
+</div>
