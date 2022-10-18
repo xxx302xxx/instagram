@@ -13,7 +13,11 @@ document.addEventListener("DOMContentLoaded",
             }
         )
         okButton.addEventListener("click",
-        
+            function(e){
+                nameHere.textContent = newName.value
+                editName.style.display = "none"
+                nameEditButton.style.display = "inline"
+            }
         )
     }
 )
